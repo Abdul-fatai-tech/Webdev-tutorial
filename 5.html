@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Details/Summary (Accordion) -->
+    <details>
+        <summary>Click to expand</summary>
+        <p>Hidden content appears here when expanded.</p>
+    </details>
+    <!-- Dialog -->
+    <dialog open>
+        <p>This is a dialog box</p> 
+        <button>Close</button>
+    </dialog>
+    <!-- Progress Bar -->
+    <progress value="70" max="100">70%</progress>
+    <!-- Meter -->
+    <meter value="0.7" min="0" max="1">70%</meter>
+    <!-- Output -->
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50"> +
+        <input type="number" id="b" value="50">
+        = <output name="result" for="a b">100</output>
+    </form>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="number" id="a" value="50"> +
+        <input type="number" id="b" value="50">
+        = <output name="result" for="a b">100</output>
+    </form>
+    <form oninput="result.value=parseInt(c.value)+parseInt(d.value)">
+        <input type="alphabet" id="c" value="haroon"> +
+        <input type="alphabet" id="d" value=" abdul-fatai">
+        = <output name="result" for="c d">haroon abdul-fatai</output>
+
+    </form>
+    <details>
+        <summary>Hover to react</summary>
+        <p>This is a details element.</p>
+    </details>
+   <dialog open>
+        <p>This is a dialog box.</p>
+        <button>open</button>
+    </dialog>
+</body>
+
+</html>
+
+
+Objective: Create a blog post layout using positioning.
+
+Requirements:
+
+ HTML structure:
+Header (fixed or sticky navigation)
+Sidebar (positioned appropriately)
+Main content area with blog post
+Footer
+ CSS requirements:
+Use position: fixed or sticky for header
+Sidebar: position: relative or absolute
+Demonstrate understanding of z-index
+Proper spacing with margins and padding
+Width constraints (max-width for readability)
+ Blog post must include:
+Post title
+Author and date
+Featured image
+Multiple paragraphs
+Pull quote or blockquote
+ Sidebar content:
+About section
+Recent posts links
+Categories or tags
+
+Deliverables:
+
+blog.html
+blog.css
+
+Bonus (5 extra points):
+
+Make header hide on scroll down, show on scroll up (CSS only)
+Add "Back to top" button (fixed position)
+
+
+Objective: Build navigation and card layout with Flexbox.
+
+Requirements:
+
+ Horizontal navigation bar using Flexbox:
+Logo on left
+Menu items on right
+Evenly spaced or with appropriate gaps
+Hover effects on links
+ Card layout section:
+Container using Flexbox
+3-4 cards with equal width
+Each card contains:
+Image (top)
+Title
+Description paragraph
+Button or link
+Cards wrap on smaller screens
+ Flexbox properties to use:
+display: flex
+justify-content
+align-items
+flex-wrap
+gap or margins
+flex property on items
+ Consistent spacing and alignment
+ Professional color scheme
+
+Deliverables:
+
+flexbox.html
+flexbox.css
+
+
+Objective: Create a dashboard using CSS Grid.
+
+Requirements:
+
+ Grid layout structure:
+Header (full width)
+Sidebar (fixed width or flexible)
+Main content area
+Footer (full width)
+ Main area contains at least 6 widgets/cards in grid
+ Use grid template areas OR grid-column/grid-row
+ Grid properties to demonstrate:
+grid-template-columns with fr units
+grid-template-rows
+gap property
+Responsive grid with repeat(auto-fit, minmax())
+ Widget/card content:
+Statistics cards
+Chart placeholder
+Recent activity list
+Quick actions
+ Visual polish:
+Shadows on cards
+Rounded corners
+Consistent spacing
+
+Deliverables:
+
+dashboard.html
+dashboard.css
+
+Bonus (5 extra points):
+
+Some cards span multiple columns/rows
+Implement grid template areas
+
+
+
+let x = 10;
+x += 3;
+console.log(x);
+x -= 2;
+console.log(x);
+x *= 2;
+console.log(x);

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background-color: #1f4e5f;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+            min-height: 70vh;
+        }
+
+        .Breadcrumb {
+            margin-bottom: 25px;
+        }
+
+        .Breadcrumb a {
+            color: #1f4e5f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .Breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20;
+        }
+
+        figure {
+            background-color: #fff;
+            margin: 0;
+            border-radius: 8px;
+            box-shadow: 0 3px 100x rgba(0, 0, 0, 0.15);
+        }
+
+        figure img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        figcaption {
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #1f4e5f;
+            color: #fff;
+            text-align: center;
+            padding: 2opx;
+        }
+
+        footer a {
+            color: #ffd166;
+            text-decoration: none;
+        }
+
+        @media(max-width: 700px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- header -->
+    <header>
+        <h1>My Travel Gallery</h1>
+        <!-- navigation menu -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!-- breadccrumb -->
+        <div class="Breadcrumb">
+            <a href="gallery.html">Gallery</a>
+
+        </div>
+        <h2>About My Travel Gallery</h2>
+        <p>
+            Explore some beautiful places and memorable destinations.
+        </p>
+        <section class="gallery">
+            <figure>
+                <img src="images/beach.jpg" alt="Beautiful beach with blue water">
+                <figcaption>Beautiful Beach</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mountain.jpg" alt=" Mountain surrounded by clouds">
+                <figcaption>Mountain view</figcaption>
+            </figure>
+            <figure>
+                <img src="images/city.jpg" alt="Beautiful city with tall building">
+                <figcaption>City view</figcaption>
+            </figure>
+            <figure>
+                <img src="images/emerald-green-forest.jpg" alt="Green forest with tall tree">
+                <figcaption>Green forest</figcaption>
+            </figure>
+            <figure>
+                <img src="images/waterfall.jpg" alt="Waterfall surrounded by nature">
+                <figcaption>Waterfall</figcaption>
+            </figure>
+            <figure>
+                <img src="images/sunset.jpg" alt="Beautiful sunset over the sea">
+                <figcaption>Sunset</figcaption>
+            </figure>
+            <figure>
+                <img src="images/road.jpg" alt="Road surrounded by tree">
+                <figcaption>Country Road</figcaption>
+            </figure>
+            <figure>
+                <img src="images/lake.webp" alt="Lake surrounded by mountain">
+                <figcaption>lake</figcaption>
+            </figure>
+            <figure>
+                <img src="images/summer-landscape-with-river.jpg" alt="Beautiful green landscape">
+                <figcaption>Beautiful Landscape</figcaption>
+            </figure>
+            <p class="back-to-top"><a href="#top">&#8593;</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 My Travel Gallery</p>
+        <a href="mailto:gallery123@gmail.com">
+            contact us
+        </a>
+    </footer>
+
+
+
+
+</body>
+
+</html>

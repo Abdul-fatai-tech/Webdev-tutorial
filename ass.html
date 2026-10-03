@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Introduction Page</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav a:hover {
+            color: #ccc;
+        }
+
+        /* Breadcrumb Styles */
+        .breadcrumb {
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .breadcrumb a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+
+        .breadcrumb a:hover {
+            color: #23527c;
+        }
+
+        /* Section Styles */
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* About Me Styles */
+        #about-me {
+            background-color: #f7f7f7;
+        }
+
+        #about-me p {
+            font-size: 18px;
+        }
+
+        /* Interests and Hobbies Styles */
+        #interests {
+            background-color: #f2f2f2;
+        }
+
+        #interests ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #interests li {
+            margin-bottom: 10px;
+        }
+
+        #interests li:before {
+            content: "\2022";
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Goals Styles */
+        #goals {
+            background-color: #f7f7f7;
+        }
+
+        #goals ol {
+            list-style: decimal;
+            padding: 0;
+            margin: 0;
+        }
+
+        #goals li {
+            margin-bottom: 10px;
+        }
+
+        /* Fun Facts Styles */
+        #fun-facts {
+            background-color: #f2f2f2;
+        }
+
+        #fun-facts p {
+            font-size: 18px;
+        }
+
+        /* Contact Styles */
+        #contact {
+            background-color: #f7f7f7;
+        }
+
+        #contact a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+
+        #contact a:hover {
+            color: #23527c;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ccc;
+        }
+
+        /* Add CSS styles for the "Back to Top" link */
+        .back-to-top {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .back-to-top a {
+            text-decoration: none;
+            color: #337ab7;
+            font-size: 24px;
+            transition: color 0.2s ease;
+        }
+
+        .back-to-top a:hover {
+            color: #23527c;
+        }
+    </style>
+</head>
+
+<body id="top">
+    <header>
+        <h1>Welcome to My Page!</h1>
+    </header>
+    <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#interests">Interests and Hobbies</a>
+        <a href="#goals">Goals</a>
+        <a href="#fun-facts">Fun Facts</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="breadcrumb">
+        <a href="#">Home</a> > Personal Introduction Page
+    </div>
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>My name is <strong>Idris Alamutu</strong>, and I'm a <em>web development enthusiast</em> and a
+            <mark>student</mark>.
+        </p>
+        <p>I'm passionate about learning new technologies and building projects that can make a difference in people's
+            lives.</p>
+        <p>As a student, I'm excited to explore the world of web development and expand my skill set.</p>
+        <p class="back-to-top"><a href="#top">&#8593;</a></p>
+    </section>
+    <section id="interests">
+        <h2>Interests and Hobbies</h2>
+        <ul>
+            <li>Playing football</li>
+            <li>Reading books on self-improvement</li>
+            <li>Learning new programming languages</li>
+        </ul>
+        <p class="back-to-top"><a href="#top">&#8593;</a></p>
+    </section>
+    <section id="goals">
+        <h2>Goals</h2>
+        <ol>
+            <li>Build a personal website to showcase my projects</li>
+            <li>Learn front-end development frameworks like React</li>
+            <li>Develop a full-stack web application</li>
+        </ol>
+        <p class="back-to-top"><a href="#top">&#8593;</a></p>
+    </section>
+    <section id="fun-facts">
+        <h2>Fun Facts</h2>
+        <p>I can speak three languages fluently!</p>
+        <p>I've participated in several coding challenges.</p>
+        <p class="back-to-top"><a href="#top">&#8593;</a></p>
+    </section>
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>You can reach me at <a href="idris.alamutu@example.com">idris.alamutu@example.com</a></p>
+        <p class="back-to-top"><a href="#top">&#8593;</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Idris Alamutu</p>
+        <p>
+            <a href="#">LinkedIn</a> |
+            <a href="#">GitHub</a> |
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+</body>
+
+</html>

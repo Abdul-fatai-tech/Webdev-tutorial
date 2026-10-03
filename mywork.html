@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #59656e;
+            color: #101820;
+            min-height: 100vh;
+        }
+
+
+        /* HEADER */
+
+        header {
+            height: 85px;
+            background: #101b24;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 55px;
+            color: white;
+        }
+
+        header p {
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            border-left: 2px solid #777;
+            padding-left: 15px
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            font-size: 42px;
+            color: #4ccfc5;
+            font-weight: bold;
+        }
+
+        .logo strong {
+            font-size: 25px;
+            color: #4ccfc5;
+        }
+
+        .tagline {
+            border-left: 1px solid #777;
+            padding-left: 12px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+            height: 100%;
+            align-items: center;
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            font-weight: bold;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        nav a:hover {
+            color: #4ccfc5;
+        }
+
+        nav .active {
+            color: #4ccfc5;
+            border-bottom: 3px solid #4ccfc5;
+        }
+
+
+        /* MAIN */
+
+        main {
+            min-height: calc(100vh - 125px);
+            padding: 35px 55px 20px;
+        }
+
+        main>h1 {
+            text-align: center;
+            color: #52d1c5;
+            font-size: 38px;
+            margin-bottom: 25px;
+        }
+
+
+        /* THREE COLUMN LAYOUT */
+
+        .work-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr 280px;
+            gap: 25px;
+            align-items: center;
+        }
+
+
+        /* LEFT */
+
+        .methodology h2,
+        .updates h2 {
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+
+        .methodology h2:nth-of-type(2) {
+            margin-top: 55px;
+        }
+
+        .process {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .process>span {
+            font-size: 28px;
+        }
+
+        .process-box {
+            width: 68px;
+            height: 68px;
+            border: 2px solid #17232c;
+            background: #9aa5aa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+        }
+
+        .process p {
+            text-align: center;
+            margin-top: 7px;
+            font-size: 15px;
+        }
+
+
+        /* PROJECT SECTION */
+
+        .projects {
+            background: #4d5962;
+            padding: 12px 8px;
+        }
+
+        .projects>h2 {
+            text-align: center;
+            font-size: 21px;
+            margin-bottom: 15px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .card {
+            background: #aeb8bc;
+            padding: 18px 16px;
+            border-radius: 7px;
+            min-height: 385px;
+            box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+        }
+
+        .card-title {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+
+        .icon {
+            font-size: 35px;
+        }
+
+        .card h3 {
+            font-size: 19px;
+            line-height: 1.2;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.4;
+            margin-bottom: 18px;
+        }
+
+        .card hr {
+            border: 0;
+            border-top: 2px solid #899398;
+            margin-bottom: 15px;
+        }
+
+        .card h4 {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        .tech {
+            font-size: 17px;
+            margin: 12px 0;
+        }
+
+
+        /* RIGHT SIDE */
+
+        .update-box {
+            background: #aeb8bc;
+            border-radius: 7px;
+            padding: 15px;
+            box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+        }
+
+        .update {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .update:last-child {
+            margin-bottom: 0;
+        }
+
+        .update span {
+            font-size: 27px;
+        }
+
+        .update p {
+            font-size: 15px;
+            line-height: 1.35;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            height: 40px;
+            background: #101b24;
+            color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+        }
+
+
+        /* RESPONSIVE */
+
+        @media (max-width: 1000px) {
+
+            .work-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .methodology,
+            .updates {
+                display: none;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                padding: 0 20px;
+            }
+
+            .tagline {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <span class="logo-icon">F</span>
+            <strong>FATAI F.</strong>
+            <span class="tagline">EMBRACING THE COMPLEX.</span>
+        </div>
+
+        <nav>
+            <a href="#">INTRO</a>
+            <a href="#" class="active">WORK</a>
+            <a href="#">INSIGHTS</a>
+            <a href="#">CONNECT</a>
+        </nav>
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+
+        <h1>MY WORK JOURNEY</h1>
+
+        <div class="work-layout">
+
+            <!-- LEFT SIDE -->
+            <aside class="methodology">
+
+                <h2>PROJECT METHODOLOGY</h2>
+
+                <div class="process">
+                    <div>
+                        <div class="process-box">▧</div>
+                        <p>Discover</p>
+                    </div>
+
+                    <span>→</span>
+
+                    <div>
+                        <div class="process-box">▧</div>
+                        <p>Design</p>
+                    </div>
+
+                    <span>→</span>
+
+                    <div>
+                        <div class="process-box">▧</div>
+                        <p>Deliver</p>
+                    </div>
+                </div>
+
+
+                <h2>PROJECT METHODOLOGY</h2>
+
+                <div class="process">
+                    <div>
+                        <div class="process-box">⌕</div>
+                        <p>Discover</p>
+                    </div>
+
+                    <span>→</span>
+
+                    <div>
+                        <div class="process-box">✎</div>
+                        <p>Design</p>
+                    </div>
+
+                    <span>→</span>
+
+                    <div>
+                        <div class="process-box">▧</div>
+                        <p>Deliver</p>
+                    </div>
+                </div>
+
+            </aside>
+
+
+            <!-- PROJECTS -->
+            <section class="projects">
+
+                <h2>PROJECT SHOWCASE</h2>
+
+                <div class="cards">
+
+                    <!-- CARD 1 -->
+                    <article class="card">
+                        <div class="card-title">
+                            <span class="icon">🛠️</span>
+                            <h3>Core System<br>Optimization</h3>
+                        </div>
+
+                        <p>
+                            Core system optimization builds to deigmaty for
+                            systemoptimization and effect components and
+                            nodelets.
+                        </p>
+
+                        <hr>
+
+                        <h4>Tech Utilized</h4>
+
+                        <div class="tech">◫ &nbsp; Node.js</div>
+                        <div class="tech">◉ &nbsp; Figma</div>
+                    </article>
+
+
+                    <!-- CARD 2 -->
+                    <article class="card">
+                        <div class="card-title">
+                            <span class="icon">▣</span>
+                            <h3>Human-Centric<br>Interface<br>Redesign</h3>
+                        </div>
+
+                        <p>
+                            Hew human-Centric interface redesign, in
+                            development animations and comsion
+                            entititation and management.
+                        </p>
+
+                        <hr>
+
+                        <h4>Tech Utilized</h4>
+
+                        <div class="tech">◫ &nbsp; Node.js</div>
+                        <div class="tech">◉ &nbsp; Figma</div>
+                    </article>
+
+
+                    <!-- CARD 3 -->
+                    <article class="card">
+                        <div class="card-title">
+                            <span class="icon">🚀</span>
+                            <h3>Rapid Deployment<br>Framework</h3>
+                        </div>
+
+                        <p>
+                            Rapid Deployment framework to build automatic
+                            hanchlage development, inarations and design.
+                        </p>
+
+                        <hr>
+
+                        <h4>Tech Utilized</h4>
+
+                        <div class="tech">◫ &nbsp; Node.js</div>
+                        <div class="tech">🤝 &nbsp; Jira</div>
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- RIGHT SIDE -->
+            <aside class="updates">
+
+                <h2>RECENT UPDATES</h2>
+
+                <div class="update-box">
+
+                    <div class="update">
+                        <span>🛠️</span>
+                        <p>
+                            Dec 12 - System optimization
+                            complete. Performance up 20%.
+                        </p>
+                    </div>
+
+                    <div class="update">
+                        <span>🤝</span>
+                        <p>
+                            Nov 28 - Collab session with
+                            London team on new UI.
+                        </p>
+                    </div>
+
+                    <div class="update">
+                        <span>🚀</span>
+                        <p>
+                            Oct 15 - First deployment in
+                            Lagos market.
+                        </p>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Sarah J. | Constructed with React & Tailwind |
+        Explore my path: [GitHub] [LinkedIn] [Insta]
+    </footer>
+
+
+</body>
+
+</html>

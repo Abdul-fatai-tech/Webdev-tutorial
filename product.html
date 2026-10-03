@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .table-container {
+            overflow: auto;
+            margin-bottom: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tbody tr:hover {
+            background-color: #1f1f1f;
+        }
+
+        .product-image {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+
+        tfoot {
+            font-weight: bold;
+            background-color: #eee;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 10;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        .submit-btn {
+            background-color: #333;
+            color: #fff;
+            margin-right: 20px;
+        }
+
+        .reset-btn {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Product Comparison</h1>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Images</th>
+                    <th>Price</th>
+                    <th>Storage</th>
+                    <th>Ram</th>
+                    <th>Battery</th>
+                    <th>Display</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>iphone 15</td>
+                    <td><img src="images/iphone.jpg" alt="Iphone 15" class="product-image"></td>
+                    <td>$950.00</td>
+                    <td>128GB</td>
+                    <td>6GB</td>
+                    <td>3349mAh</td>
+                    <td>6.1 inches</td>
+                    <td>4.7/5</td>
+                </tr>
+
+                <tr>
+                    <td>Samsung Galaxy S24</td>
+                    <td><img src="images/Samsung -s24.jpg" alt="Samsung Galaxy S24" class="product-image"></td>
+                    <td>$1,100,000</td>
+                    <td>128GB</td>
+                    <td>8GB</td>
+                    <td>4575mAh</td>
+                    <td>6.2 inches</td>
+                    <td>4.6/5</td>
+                </tr>
+
+                <td>G00gle Pixel 8</td>
+                <td><img src="images/pixel8.jpg" alt="Google Pixel 8" class="product-image"></td>
+                <td>$850.00</td>
+                <td>128GB</td>
+                <td>6GB</td>
+                <td>4575mAh</td>
+                <td>6.2 inches</td>
+                <td>4.6/5</td>
+                </tr>
+
+                <tr>
+                    <td>Xiaomi 14</td>
+                    <td><img src="images/Xiaomi14.jpg" alt="Xiaomi 14" class="product-image"></td>
+                    <td>$780.00</td>
+                    <td>256GB</td>
+                    <td>12GB</td>
+                    <td>4610mAh</td>
+                    <td>6.36 inches</td>
+                    <td>4.7/5</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2"></td>Average/Summary</td>
+                    <td>$920,009</td>
+                    <td colspan="5">Product Compared</td>
+
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <h2>Contact/ Product Inquiry</h2>
+    <div class="form-container">
+        <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+            <label for="email">Email Addrress</label>
+            <input type="text" id="email" name="email" placeholder="Enter your Email" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number" required>
+            <label for="product">Select Product</label>
+            <select name="product" id="product" required>
+                <option value=""> Select a product </option>
+                <option value="Iphone 15">iphone 15</option>
+                <option value="Samsung Galaxy S24">Samsung Galaxy S24</option>
+                <option value="Google Pixel 8">Google Pixel 8</option>
+                <option value="Xiaomi 14">Xiaomi 14</option>
+            </select>
+            <label for="quantity">Quantity</label>
+            <input type="text" id="quantity" name="quantity" min="1" max="10" value="1" required>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" placeholder="Write Your Inquiry here..." required></textarea>
+            <div class="buttons">
+                <button type="submit" class="submit-btn">
+                    Submit
+                </button>
+                <button type="reset" class="reset-btn">
+                    Reset
+                </button>
+            </div>
+        </form>
+    </div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

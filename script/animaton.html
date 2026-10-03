@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+          .cir{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+
+            animation: change 2s infinite;
+          }
+@keyframes change{
+0%{
+    background-color: red;
+    transform: translateX(0) scale(1);
+}
+50%{
+    background-color: blue;
+    transform: translateX(100px) scale(2);
+}
+100%{
+    background-color: green;
+    transform: translateX(0) scale(1);
+}
+}
+        
+    </style>
+</head>
+<body>
+    <div class="cir"></div>
+</body>
+</html>

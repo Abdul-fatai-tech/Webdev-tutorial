@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 220px ifr;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar main";
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #202938;
+    padding: 20px;
+}
+
+.sidebar a {
+    display: grid;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.sidebar h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.sidebar a:hover {
+    background-color: #3b5fba;
+}
+
+.main {
+    grid-area: main;
+    padding: 30px;
+}
+
+.widgets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    align-self: start;
+}
+
+.chart {
+    grid-column: span 2;
+}
+
+.chart-placeholder {
+    height: 200px;
+    display: grid;
+    place-items: center;
+    background-color: #e9edf2;
+    border-radius: 10px;
+}
+
+.activity {
+    grid-column: span 1;
+    align-self: start;
+}
+
+.activity ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.activity li {
+    margin-bottom: 8px;
+}
+
+.actions {
+    grid-column: span 1;
+    align-self: start;
+}
+
+.actions button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+footer{
+    grid-area: footer;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid #ddd;
+}
+@media (prefers-color-scheme: dark) { }

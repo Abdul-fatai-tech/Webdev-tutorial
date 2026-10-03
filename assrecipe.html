@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Recipe Collection</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* Table of Contents Box */
+        nav {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 30px;
+        }
+
+        /* Recipe "Card" Container */
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h2 {
+            color: #e67e22;
+            /* Food-inspired orange color */
+            border-bottom: 2px solid #f1c40f;
+            padding-bottom: 10px;
+        }
+
+        /* Styling the info bar (Time/Servings) */
+        .recipe-meta {
+            background: #fdf2e9;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* Highlighting Bold Ingredients */
+        ul li strong {
+            color: #d35400;
+        }
+
+        /* Italicizing Notes */
+        .note {
+            color: #7f8c8d;
+            font-style: italic;
+            font-size: 0.9em;
+            border-left: 3px solid #bdc3c7;
+            padding-left: 10px;
+        }
+
+        /* Nutrition Table/Box */
+        .nutrition {
+            background: #eee;
+            padding: 10px;
+            font-size: 0.85em;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        img {
+            width: 100%;
+        max-width: 500px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="top">Global Kitchen: My Favorite Recipes</h1>
+
+    <nav>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#pasta">Classic Garlic Butter Pasta</a></li>
+            <li><a href="#taco">Quick Black Bean Tacos</a></li>
+            <li><a href="#jollof">Jollof Rice</a></li>
+            <li><a href="#Indomie">Quick Indomie Noodles</a></li>
+            <li><a href="#Bread">Baked Bread</a></li>
+        </ul>
+    </nav>
+
+    <section id="pasta">
+        <img src="images/red-sauce-pasta-1.webp" alt="pasta">
+        <h2>Classic Garlic Butter Pasta</h2>
+        <p>A comforting, simple meal that relies on high-quality olive oil and fresh garlic. Perfect for busy weeknights
+            when you want something gourmet in under 15 minutes.</p>
+
+        <div class="recipe-meta">
+            <span><strong>Prep:</strong> 5 mins</span>
+            <span><strong>Cook:</strong> 10 mins</span>
+            <span><strong>Servings:</strong> 2</span>
+        </div>
+
+        <h3>Ingredients</h3>
+        <ul>
+            <li><strong>8 oz</strong> Spaghetti or Linguine</li>
+            <li><strong>4 cloves</strong> Garlic, thinly sliced</li>
+            <li><strong>1/4 cup</strong> Extra virgin olive oil</li>
+            <li><strong>2 tbsp</strong> Unsalted butter</li>
+            <li>Garnish options:
+                <ul>
+                    <li>Freshly grated Parmesan cheese</li>
+                    <li>Red pepper flakes</li>
+                    <li>Fresh parsley, chopped</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Instructions</h3>
+        <ol>
+            <li>Bring a large pot of salted water to a boil.
+                <p class="note">Make sure the water is "salty like the sea."</p>
+            </li>
+            <li>Cook the pasta according to package instructions until al dente.</li>
+            <li>While pasta cooks, heat oil and butter in a skillet over medium-low heat.</li>
+            <li>Add sliced garlic and sauté until golden:
+                <ol>
+                    <li>Watch closely so it doesn't burn!</li>
+                    <li>Remove from heat once fragrant.</li>
+                </ol>
+            </li>
+            <li>Toss the drained pasta into the skillet with a splash of pasta water.</li>
+        </ol>
+
+        <div class="nutrition">
+            <strong>Nutritional Info:</strong> Approx. 450 kcal per serving.
+        </div>
+
+        <p><a href="#top">↑ Back to Top</a></p>
+    </section>
+
+    <section id="taco">
+        <img src="images/tacos.jpg" alt="tacos">
+        <h2>Quick Black Bean Tacos</h2>
+        <p>Healthy, vegetarian-friendly tacos that are packed with protein and flavor.</p>
+        <p><em>(Add your ingredients and instructions here following the structure above!)</em></p>
+        <div class="recipe-meta">
+            <span><strong>Prep:</strong> 8 mins</span>
+            <span><strong>Cook:</strong> 10 mins</span>
+            <span><strong>Servings:</strong> 4</span>
+        </div>
+
+        <h3>Ingredients</h3>
+        <ul>
+            <li><strong>8 oz</strong> Spaghetti or Linguin</li>
+            <li><strong>4 cloves</strong> Garlic, thinly sliced</li>
+            <li><strong>1/4 cup</strong> Extra virgin olive oil</li>
+            <li><strong>2 tbsp</strong> Unsalted butter</li>
+            <li>Garnish options:
+                <ul>
+                    <li>Freshly grated Parmesan cheese</li>
+                    <li>Red pepper flakes</li>
+                    <li>Fresh parsley, chopped</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Instructions</h3>
+        <ol>
+            <li>Bring a large pot of salted water to a boil.
+                <p class="note">Make sure the water is "salty like the sea."</p>
+            </li>
+            <li>Cook the pasta according to package instructions until al dente.</li>
+            <li>While pasta cooks, heat oil and butter in a skillet over medium-low heat.</li>
+            <li>Add sliced garlic and sauté until golden:
+                <ol>
+                    <li>Watch closely so it doesn't burn!</li>
+                    <li>Remove from heat once fragrant.</li>
+                </ol>
+            </li>
+            <li>Toss the drained pasta into the skillet with a splash of pasta water.</li>
+        </ol>
+
+        <div class="nutrition">
+            <strong>Nutritional Info:</strong> Approx. 450 kcal per serving.
+        </div>
+        <p><a href="#top">↑ Back to Top</a></p>
+    </section>
+    <section id="jollof">
+<img src="images/jollof.jpg" alt="jollof rice">
+
+        <h2>Jollof Rice</h2>
+        <p>Jollof rice is a popular West African dish made with rice, tomatoes, peppers, onions, and delicious spices.
+            It is commonly served with chicken, beef, fish, or vegetables.
+        </p>
+
+        <div class="recipe-meta">
+            <span><strong>Prep:</strong> 6 mins</span>
+            <span><strong>Cook:</strong> 60 mins</span>
+            <span><strong>Servings:</strong> 2</span>
+        </div>
+        <h2>Description</h2>
+        <p>
+            Jollof rice is a popular West African dish made with rice, tomatoes, peppers, onions, and delicious spices.
+            It is commonly served with chicken, beef, fish, or vegetables.
+        </p>
+        <p>
+            <strong>Preparation Time:</strong> 20 minutes<br>
+            <strong>Cooking Time:</strong> 45 minutes<br>
+            <strong>Servings:</strong> 4 People<br>
+        </p>
+        <h2>Ingredients</h2>
+        <ul>
+            <li><strong>2 cups</strong> of long-grain rice</li>
+            <li><strong>4</strong> fresh tomatoes </li>
+            <li><strong>2</strong> red bell peppers</li>
+            <li><strong>1</strong> onion</li>
+            <li><strong>2 tablespoons</strong> tomato paster</li>
+            <li><strong>3 tablespoons</strong> vegetable oil</li>
+            <li><strong>2 cups</strong> chicken stock</li>
+            <li><strong>1 teaspoon</strong> curry powder</li>
+            <li><strong>salt</strong> to taste</li>
+            <li>
+                optimal ingredients:
+                <ul>
+                    <li>Chicken</li>
+                    <li>Carrot</li>
+                    <li>Green peas</li>
+                </ul>
+            </li>
+        </ul>
+        <p><a href="#top">↑ Back to Top</a></p>
+    </section>
+    <section id="Indomie">
+        <img src="images/indomie-noodles.jpg" alt="indomie noodles">
+        <h2>Quick Indomie Noodles</h2>
+        <p>A comforting, simple meal that relies on high-quality olive oil and fresh peppers. Perfect for quick
+            weeknight dinners.</p>
+
+        <div class="recipe-meta">
+            <span><strong>Prep:</strong> 5 mins</span>
+            <span><strong>Cook:</strong> 10 mins</span>
+            <span><strong>Servings:</strong> 4</span>
+        </div>
+        <h2>Description</h2>
+        <p>
+            Indomie noodles are a quick and easy meal option, perfect for busy days. They can be customized with various
+            toppings and flavors.
+        </p>
+        <p>
+            <strong>Preparation Time:</strong> 50 minutes<br>
+            <strong>Cooking Time:</strong> 10 minutes<br>
+            <strong>Servings:</strong> 4 People<br>
+        </p>
+        <h2>Ingredients</h2>
+        <ul>
+            <li><strong>4 packages</strong> Indomie noodles</li>
+            <li><strong>4</strong> fresh tomatoes </li>
+            <li><strong>2</strong> red bell peppers</li>
+            <li><strong>1</strong> onion</li>
+            <li><strong>2 tablespoons</strong> tomato paster</li>
+            <li><strong>3 tablespoons</strong> vegetable oil</li>
+            <li><strong>2 cups</strong> chicken stock</li>
+            <li><strong>1 teaspoon</strong> curry powder</li>
+            <li><strong>salt</strong> to taste</li>
+        </ul>
+        <div class="nutrition">
+            <strong>Nutritional Info:</strong> Approx. 450 kcal per serving.
+        </div>
+        <p><a href="#top">↑ Back to Top</a></p>
+    </section>
+    <section id="Bread">
+        <img src="images/bread.jpg" alt="baked Bread">
+        <h2>Baked Bread</h2>
+        <p>Healthy, vegetarian-friendly bread that is packed with protein and flavor.</p>
+        <p><em>(Add your ingredients and instructions here following the structure above!)</em></p>
+        <div class="recipe-meta">
+            <span><strong>Prep:</strong> 5 mins</span>
+            <span><strong>Cook:</strong> 10 mins</span>
+            <span><strong>Servings:</strong> 2</span>
+        </div>
+
+        <h3>Ingredients</h3>
+        <ul>
+            <li><strong>8 oz</strong> Spaghetti or Linguine</li>
+            <li><strong>4 cloves</strong> Garlic, thinly sliced</li>
+            <li><strong>1/4 cup</strong> Extra virgin olive oil</li>
+            <li><strong>2 tbsp</strong> Unsalted butter</li>
+            <li>Garnish options:
+                <ul>
+                    <li>Freshly grated Parmesan cheese</li>
+                    <li>Red pepper flakes</li>
+                    <li>Fresh parsley, chopped</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Instructions</h3>
+        <ol>
+            <li>Bring a large pot of salted water to a boil.
+                <p class="note">Make sure the water is "salty like the sea."</p>
+            </li>
+            <li>Cook the pasta according to package instructions until al dente.</li>
+            <li>While pasta cooks, heat oil and butter in a skillet over medium-low heat.</li>
+            <li>Add sliced garlic and sauté until golden:
+                <ol>
+                    <li>Watch closely so it doesn't burn!</li>
+                    <li>Remove from heat once fragrant.</li>
+                </ol>
+            </li>
+            <li>Toss the drained pasta into the skillet with a splash of pasta water.</li>
+        </ol>
+
+        <div class="nutrition">
+            <strong>Nutritional Info:</strong> Approx. 450 kcal per serving.
+        </div>
+        <p><a href="#top">↑ Back to Top</a></p>
+    </section>
+</body>
+
+</html>  

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+
+
+
+
+    <!-- Text Input -->
+    <input type="text" name="username" placeholder="Enter username">
+    <!-- Password -->
+    <input type="password" name="password">
+    <!-- Email -->
+    <input type="email" name="email" required>
+    <!-- Number -->
+    <input type="number" name="age" min="0" max="120" step="1">
+    <!-- Date -->
+    <input type="date" name="birthday">
+    <!-- Time -->
+    <input type="time" name="appointment">
+    <!-- Datetime-local -->
+    <input type="datetime-local" name="meeting">
+    <!-- Month -->
+    <input type="month" name="month">
+    © COPYRIGHT 2025 CONFIDE COMPUTER ACADEMY
+    Confide Computer Academy © COPYRIGHT 2025
+    <!-- Week -->
+    <input type="week" name="week">
+    <!-- Color -->
+    <input type="color" name="favorite-color">
+    <!-- Range (Slider) -->
+    <input type="range" name="volume" min="0" max="100" value="50">
+    <!-- File Upload -->
+    <input type="file" name="document">
+    <input type="file" name="images" multiple accept="image/*">
+    <!-- URL -->
+    <input type="url" name="website" placeholder="https://example.com">
+    <!-- Tel -->
+    <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    <!-- Search -->
+    <input type="search" name="query">
+    <!-- Hidden -->
+    <input type="hidden" name="user_id" value="12345">
+<!-- Checkboxes (Multiple Selection) -->
+<input type="checkbox" id="html" name="skills" value="html">
+<label for="html">HTML</label>
+<input type="checkbox" id="css" name="skills" value="css">
+<label for="css">CSS</label>
+<input type="checkbox" id="js" name="skills" value="javascript">
+<label for="js">JavaScript</label>
+<!-- Radio Buttons (Single Selection) -->
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
+<!-- Method 1: Using 'for' attribute -->
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+<!-- Method 2: Wrapping input -->
+<label>
+Username:
+<input type="text" name="username">
+</label>
+Textarea
+<textarea name="message" rows="5" cols="50" placeholder="Enter your message">
+</textarea>
+<!-- With maxlength -->
+<textarea name="bio" maxlength="500" rows="4"></textarea>
+Select Dropdown
+<!-- Basic Select -->
+<select name="country">
+<option value="">Select a country</option>
+<option value="us">United States</option>
+<option value="uk">United Kingdom</option>
+<option value="ca">Canada</option>
+</select>
+<!-- With Default Selection -->
+<select name="size">
+<option value="s">Small</option>
+<option value="m" selected>Medium</option>
+<option value="l">Large</option>
+</select>
+<!-- Multiple Selection -->
+<select name="languages" multiple size="4">
+<option value="html">HTML</option>
+© COPYRIGHT 2025 CONFIDE COMPUTER ACADEMY
+Confide Computer Academy © COPYRIGHT 2025
+<option value="css">CSS</option>
+<option value="js">JavaScript</option>
+<option value="python">Python</option>
+</select>
+<!-- Grouped Options -->
+<select name="car">
+<optgroup label="German Cars">
+<option value="audi">Audi</option>
+<option value="bmw">BMW</option>
+</optgroup>
+<optgroup label="Japanese Cars">
+<option value="toyota">Toyota</option>
+<option value="honda">Honda</option>
+</optgroup>
+</select>
+Buttons
+<!-- Submit Button -->
+<button type="submit">Submit Form</button>
+<input type="submit" value="Submit Form">
+<!-- Reset Button -->
+<button type="reset">Reset Form</button>
+<!-- Regular Button (for JavaScript) -->
+<button type="button" onclick="doSomething()">Click Me</button>
+<!-- Image Button -->
+<input type="image" src="submit.png" alt="Submit">
+Form Validation Attributes
+<!-- Required Field -->
+<input type="text" name="username" required>
+<!-- Minimum/Maximum Length -->
+<input type="text" name="username" minlength="3" maxlength="20">
+<!-- Pattern (Regular Expression) -->
+<input type="text" name="zip" pattern="[0-9]{5}" title="5-digit zip code">
+
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: Arial,  sans-serif;
+    background-color: #f4f7fb;
+    color: #17213a;
+    line-height: 1.6;
+}
+header{
+    background: linear-gradient(135deg, #061d49, #0b4dcc);
+    color: white;
+    padding: 45px 8%;
+    text-align: center;
+}
+header h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+header p{
+    font-size: 18px;
+}
+main{
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;   
+}
+section{
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+section h2{
+    color: #124fc5;
+    margin-bottom: 15px;
+}
+form{
+    margin-top: 20px;
+}
+fieldset{
+    border: 1px solid #d7deeb;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    color: #124fc5;
+    padding: 0 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    margin-right: 7px;
+    margin-bottom: 12px;
+}
+input[type="radio"] + label,
+input[type="checkbox"] + label{
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+
+label{
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea{
+    width: 100%;
+    padding: 13px;
+    border:1px solid #ccd3df;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+button{
+display: block;
+margin: 20px auto 0;
+background: #1559de;
+color: white;
+border: none;
+padding: 14px 40px;
+border-radius: 7px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+}
+footer{
+    background: #061d49;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30PX;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tech conference 2026</h1>
+        <p>Register to attend our upcoming technology event</p>
+    </header>
+    <main>
+        <section>
+            <h2>Event information</h2>
+            <p><strong>Date:</strong>November 17,2026</p>
+            <p><strong>Time:</strong>10AM - 4PM</p>
+            <p><strong>Location:</strong>2,Bello compund isheri olofin, lagos state.</p>
+            <label for="event-date">Event Date</label>
+            <input type="date" id="event-date" name="event-date" min="2026-11-17" required>
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" list="cities" placeholder="Select your city">
+            <datalist id="cities">
+                <option value="Lagos">
+                <option value="Abuja">
+                <option value="Ibadan">
+                <option value="Kano">
+                <option value="Port Harcourt">
+            </datalist>
+        </section>
+        <section>
+            <h2>Register form</h2>
+            <form action="/register" method="post">
+                <fieldset>
+                    <legend>Registration form</legend>
+                    <label for="fullname">Full Name</label><br>
+                    <input type="text" id="fullname" name="fullname" minlength="3" required
+                        placeholder="Haroon abdul-fatai"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required placeholder="haroonfatai71@gmail.com"><br>
+                    <label for="phone number">Phone Number</label><br>
+                    <input type="tel" id="phone number" name="phone number" pattern="[0-9]{11}"
+                        placeholder="08064367612" required><br>
+                    <label for="dob">Date of bath</label><br>
+                    <input type="date" id="dob" name="dob" required><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Event preference</legend><br>
+                    <p>T-shirt size:</p>
+                    <input type="radio" id="small" name="shirt" value="s">
+                    <label for="small">S</label>
+                    <input type="radio" id="medium" name="shirt" value="m">
+                    <label for="medium">M</label>
+                    <input type="radio" id="large" name="shirt" value="l">
+                    <label for="large">L</label>
+                    <input type="radio" id="xlarge" name="shirt" value="xl">
+                    <label for="xlarge">XL</label>
+                    <p>Dietary Restriction</p>
+                    <input type="checkbox" id="vegetarian" name="diet" value="vegetarian">
+                    <label for="vegetarian">Vegetarian</label>
+                    <input type="checkbox" id="vegan" name="diet" value="vegan">
+                    <label for="vegan">vegan</label>
+                    <input type="checkbox" id="gluten-free" name="diet" value="gluten-free">
+                    <label for="gluten-free">Gluten-free</label>
+                    <input type="checkbox" id="none" name="diet" value="none">
+                    <label for="none">None</label><br>
+                    <label for="emergency">Emergency Contact</label><br>
+                    <input type="text" id="emergency" name="emergency" required><br>
+                    <label for="requests">Special Requests</label><br>
+                    <textarea name="requests" id="requests" rows="5" cols="30"></textarea><br>
+                </fieldset>
+
+                <input type="checkbox" id="terms" name="terms" required><br>
+                <label for="terms">I Agree To The Terms and Conditions</label><br>
+                <button type="submit">Register</button><br>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>@copy; 2026 Tech Conference. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

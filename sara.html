@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #59656e;
+            color: #101820;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #101b24;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            padding-right: 20px;
+        }
+
+        header p {
+            font-size: 12px;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+
+        footer {
+            background-color: #101b24;
+            text-align: center;
+            color: white;
+            padding: 5px auto;
+            height: 20px;
+        }
+
+        .blog {
+            display: flex;
+            gap: 40px;
+        }
+
+
+
+        .update-box {
+            background: #aeb8bc;
+            border-radius: 7px;
+            padding: 15px;
+            box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+          
+        }
+
+        .update {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+
+        .update:last-child {
+            margin-bottom: 0;
+        }
+
+        .update span {
+            font-size: 27px;
+        }
+
+        .update p {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .right-aside {
+            margin-top: 300px;
+            margin-right: 20px;
+            text-align: center;
+
+        }
+
+
+        .updates h2 {
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+
+
+
+        .process {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .process>span {
+            font-size: 28px;
+        }
+
+        .process-box {
+            width: 68px;
+            height: 68px;
+            border: 2px solid #17232c;
+            background: #9aa5aa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+        }
+
+        .process p {
+            text-align: center;
+            margin-top: 7px;
+            font-size: 15px;
+        }
+
+        .side-bar {
+            margin-top: 300px;
+            margin-left: 15px;
+        }
+
+        .side-bar h2 {
+            font-size: 20px;
+        }
+
+        article {
+            background-color: #59656e;
+        }
+
+        .article>h2 {
+            text-align: center;
+            font-size: 21px;
+            margin-bottom: 15px;
+        }
+
+        article {
+            display: flex;
+        }
+
+        article section {
+            background: #aeb8bc;
+            padding: 18px 16px;
+            border-radius: 7px;
+            min-height: 385px;
+            box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+            margin-top: 300px;
+            margin-right: 30px;
+        }
+
+        article h2 {
+            font-size: 20px;
+            width: 30px;
+            margin-top: 250px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>EMBRANCING THE COMPLEX</p>
+        <nav>
+            <ul>
+                <li>INTRO</li>
+                <li>WORK</li>
+                <li>INSIGHT</li>
+                <li>CONNECT</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="blog">
+        <div class="side-bar">
+            <aside>
+                <section>
+                    <h2>PROJECT METHODOLOGY</h2>
+
+                    <div class="process">
+                        <div>
+                            <div class="process-box">▧</div>
+                            <p>Discover</p>
+                        </div>
+
+                        <span>→</span>
+
+                        <div>
+                            <div class="process-box">▧</div>
+                            <p>Design</p>
+                        </div>
+
+                        <span>→</span>
+
+                        <div>
+                            <div class="process-box">▧</div>
+                            <p>Deliver</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>PROJECT METHODOLOGY</h2>
+
+                    <div class="process">
+                        <div>
+                            <div class="process-box">⌕</div>
+                            <p>Discover</p>
+                        </div>
+
+                        <span>→</span>
+
+                        <div>
+                            <div class="process-box">✎</div>
+                            <p>Design</p>
+                        </div>
+
+                        <span>→</span>
+
+                        <div>
+                            <div class="process-box">▧</div>
+                            <p>Deliver</p>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+        </div>
+        <main>
+            <article>
+                <H2>PROJECT SHOWCASE</H2>
+
+                <section>
+                    <div class="card-title">
+                        <span class="icon">🛠️</span>
+                        <h3>Core System<br>Optimization</h3>
+                    </div>
+
+                    <p>
+                        Core system optimization builds to deigmaty for
+                        systemoptimization and effect components and
+                        nodelets.
+                    </p>
+
+                    <hr>
+
+                    <h4>Tech Utilized</h4>
+
+                    <div class="tech">◫ &nbsp; Node.js</div>
+                    <div class="tech">◉ &nbsp; Figma</div>
+                </section>
+
+                <section>
+                    <div class="card-title">
+                        <span class="icon">▣</span>
+                        <h3>Human-Centric<br>Interface<br>Redesign</h3>
+                    </div>
+
+                    <p>
+                        Hew human-Centric interface redesign, in
+                        development animations and comsion
+                        entititation and management.
+                    </p>
+
+                    <hr>
+
+                    <h4>Tech Utilized</h4>
+
+                    <div class="tech">◫ &nbsp; Node.js</div>
+                    <div class="tech">◉ &nbsp; Figma</div>
+                </section>
+
+                <section>
+                    <div class="card-title">
+                        <span class="icon">🚀</span>
+                        <h3>Rapid Deployment<br>Framework</h3>
+                    </div>
+
+                    <p>
+                        Rapid Deployment framework to build automatic
+                        hanchlage development, inarations and design.
+                    </p>
+
+                    <hr>
+
+                    <h4>Tech Utilized</h4>
+
+                    <div class="tech">◫ &nbsp; Node.js</div>
+                    <div class="tech">🤝 &nbsp; Jira</div>
+                </section>
+            </article>
+        </main>
+        <aside class="right-aside">
+
+            <h2>RECENT UPDATES</h2>
+
+            <div class="update-box">
+
+                <div class="update">
+                    <span>🛠️</span>
+                    <p>
+                        Dec 12 - System optimization
+                        complete. Performance up 20%.
+                    </p>
+                </div>
+
+                <div class="update">
+                    <span>🤝</span>
+                    <p>
+                        Nov 28 - Collab session with
+                        London team on new UI.
+                    </p>
+                </div>
+
+                <div class="update">
+                    <span>🚀</span>
+                    <p>
+                        Oct 15 - First deployment in
+                        Lagos market.
+                    </p>
+                </div>
+
+            </div>
+        </aside>
+    </div>
+    <footer>
+        © 2026 fatai F. | Constructed with React & Tailwind |
+        Explore my path: [GitHub] [LinkedIn] [Insta]
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

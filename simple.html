@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my simple journey</title>
+    <style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    font-family: Georgia,  serif;
+    background-color: #fff8ee;
+    color: #222;
+}
+
+header{
+    height: 15%;
+    background-color: #6689aa;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1{
+    font-size: 42px;
+}
+nav{
+    height: 8%;
+    background-color: #fff0dc;
+    text-align: center;
+    padding: 15px;
+}
+nav a{
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    margin: 0 25px;
+    font-size: 18px;
+}
+nav a:hover {
+color: #d9785d;
+
+}
+nav a:active {
+    color: white;
+background-color: #d9785d;
+}
+main{
+    height: 67%;
+    max-width: 800px;
+    margin:  auto;
+    padding:10px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 30px;
+}
+.about img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.about h2{
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+.about p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.project-title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.project{
+    display: flex;
+    gap: 20px;
+}
+.card{
+    background-color: white;
+    width: 33.33%;
+    padding: 25px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #ccc;
+}
+.card h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.card p{
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.card button{
+    background-color: #d9785d;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.card button:hover{
+    background-color: #b95d45;
+}
+footer{
+    height: 10px;
+    margin-top: 40px;
+    background-color: #fff0dc;
+    text-align: center;
+    padding: 18px;
+    font-size: 16px;
+}
+footer a{
+    color: #333;
+    margin: 0 3px;
+}
+@media (max-width: 700px){
+.about{
+flex-direction: column;
+text-align: center;
+}
+.project{
+    flex-direction: column;
+}
+.card{
+    width: 100px;
+}
+nav a{
+    margin: 0 8px;
+    font-size: 15px;
+}
+header h1{
+    font-size: 30px;
+}
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MY SIMPLE JOURNEY</h1>
+        <!-- navigation menu -->
+    </header>
+    <nav>
+
+        <a href="#about">ABOUT ME</a>
+        <a href="#">PROJECTS</a>
+        <a href="#">BLOG</a>
+        <a href="#">CONTACT</a>
+    </nav>
+
+    <main>
+         
+        <section id="about" class="about">
+            <img src="images/emerald-green-forest.jpg" alt="My profile Picture">
+            <div>
+                <h2>Hello, I'm Abdul-Fatai!</h2>
+                <p>
+                    Welcome to my very first web project! i'm a beginner learning
+                    HTML & CSS to express myself and build new things. i love
+                    crafting, code, and sharing ideas.
+                </p>
+            </div>
+        </section>
+
+        <h2 class="project-title">
+            A Few Simple Projects
+        </h2>
+        <section class="project">
+            <div class="card">
+                <h3>Recipe Book</h3>
+                <p>
+                    A simple layout for my favourite recipes.
+                </p>
+
+                <button>view</button>
+            </div>
+
+            <div class="card">
+                <h3>Photo Gallery</h3>
+                <p>
+                    A place to share snapshots of daily life.
+                </p>
+
+                <button>view</button>
+            </div>
+
+            <div class="card">
+                <h3>Daily journal</h3>
+                <p>
+                    A simple HTML log for thoughts and notes.
+                </p>
+
+                <button>view</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        @2026 Abdul Fatai |
+        Created with love using HTML & CSS |
+        Find me on:
+
+        <a href="#">[GitHub]</a>
+        <a href="#">[LinkedIn]</a>
+        <a href="#">[Insta]</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 3px solid black;
+}
+body{
+    font-family: Arial,  sans-serif;
+    background-color: white;
+    color: black;
+}
+.site-header{
+    position: static;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: white;
+    padding:20px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-link{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-link a{
+    color: white;
+    text-decoration: none;
+}
+.blog{
+  background-color: white; 
+  display: flex; 
+  margin: 20px 40px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.08);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 50px 10px;
+  padding: 0 20px;
+  align-items: stretch;
+}
+aside{
+    width: 280px;
+   margin: 0;
+   flex-shrink: 0;
+   padding: 20px;
+   position: relative;
+  
+  
+}
+aside section{
+    
+    margin-bottom: 100px;
+    background-color: black;
+    box-shadow: inherit;
+    color: white;
+    padding: 25px 10px;
+    
+}
+aside p,
+a{
+    color: white;
+    line-height: 1.5;
+    text-decoration: none;
+    max-width: 100%;
+    font-size: small;
+    padding-top: 10px ;
+    padding-right: 10px;
+    
+}
+aside h2{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    
+}
+.blog main{
+    flex: 1;
+    min-width: 0;
+}
+article header, title{
+    font-size: large;
+    font-weight: bold;
+    max-width: 400px;
+    margin-bottom: 25px;
+   margin-top: 12px;
+   text-align: center;
+  
+   
+}
+img{
+    width:400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    
+}
+article section{
+    max-width: 500px;
+    color: black;
+    margin: 10px 0 20px 0;
+}
+article section p{
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    max-width: 500px;
+    line-height: 1.5;
+    text-align: center;
+}
+figcaption{
+    font-weight: bold;
+    font-size: medium;
+}
+blockquote{
+    background-color: rgb(185, 240, 130);
+    padding: 25px 30px;
+    margin: 30px 0;
+    font-size: 22px;
+    font-style: italic;
+    border-left: 5px solid black;
+}
+footer{
+background-color: black;
+text-align: center;
+padding: 30px 20px;
+margin-top: 40px;
+}
+.back-to-top{
+    color: black;
+    background-color:  rgb(185, 240, 130);
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+.home{
+    background-color: black ;
+    color: white;
+    box-shadow: inherit;
+    margin: 20px 40px;
+    padding: 0 20px;
+}
+.home-label{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(185, 240, 130);
+    margin-bottom: 10px;
+}
+.home h1{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.home span{
+    text-align: center;
+}
+.home p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.home div{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.about{
+     background-color: black ;
+    color: white;
+    box-shadow: inherit;
+    margin: 20px 40px;
+    padding: 0 20px;
+}
+.about-label{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(185, 240, 130);
+    margin-bottom: 10px;
+}
+.about h2,
+p{
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.about div{
+    text-align: center;
+}
+.categories{
+     background-color: black ;
+    color: white;
+    box-shadow: inherit;
+    margin: 20px 40px;
+    padding: 0 20px;
+}
+.categories-label{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(185, 240, 130);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.categories-link{
+    text-align: center;
+}
+.choose{
+    font-weight: bold;
+}
+.categories h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form{
+    width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+form label, button{
+    display: block;
+     margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form textarea{
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+ border-radius: 5px;
+ font-size: 16px;
+}
+
+form button{
+    background-color:rgb(185, 240, 130) ;
+color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}

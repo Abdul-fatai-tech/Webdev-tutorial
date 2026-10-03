@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipe</title>
+<style>
+ /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+ body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color:black;
+            background-color:#fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+  /* Header Styles */
+        header {
+            background-color: red;
+            color:#fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #db0000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav a:hover {
+            color:black;
+        }
+.home {
+            padding: 10px;
+            background-color: hsl(0, 100%, 69%);
+            border-bottom: 1px solid rgb(255, 98, 98);
+        }
+
+        .home a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .home a:hover {
+            color: #fff;
+        }
+ section {
+            background-color: #fffcfc;
+            padding: 20px;
+            margin-bottom: 20px;
+             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+ section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+ #description {
+            background-color: rgb(248, 244, 244);
+        }
+
+        #description p {
+            font-size: 18px;
+        }
+ #ingredients {
+            background-color: rgb(248, 244, 244);
+        }
+
+        #ingredients ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #ingredients li {
+            margin-bottom: 10px;
+        }
+
+        #ingredients li:before {
+            content: "\2022";
+            font-weight: bold;
+            margin-right: 10px;
+        }
+  #instructions {
+            background-color: rgb(248, 244, 244);
+        }
+
+        #instructions ol {
+            list-style: decimal;
+            padding: 0;
+            margin: 0;
+        }
+
+        #instructions li {
+            margin-bottom: 10px;
+        }
+
+     #tips {
+            background-color: rgb(248, 244, 244);
+        }
+
+        #tips ul {
+            list-style: decimal;
+            padding: 0;
+            margin: 0;
+        }
+
+        #tips li {
+                margin-bottom: 10px;
+            }
+  #nutrition{
+            background-color: rgb(248, 244, 244);
+        }
+
+        #nutrition ul {
+            list-style: decimal;
+            padding: 0;
+            margin: 0;
+        }
+
+        #nutrition li {
+                margin-bottom: 10px;
+            }
+  #contact {
+            background-color:rgb(248, 244, 244);
+        }
+
+        #contact a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+
+        #contact a:hover {
+            color: #23527c;
+        }
+
+footer {
+            background-color: black;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ccc;
+        }
+
+        /* Add CSS styles for the "Back to Top" link */
+        .back-to-top {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .back-to-top a {
+            text-decoration: none;
+            color: #337ab7;
+            font-size: 24px;
+            transition: color 0.2s ease;
+        }
+
+        .back-to-top a:hover {
+            color: #23527c;
+        }
+    </style>
+</head>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="top">
+    <header>
+       <h1>My recipe Page</h1> 
+    </header>
+    <nav>
+        <a href="#jollof Rice">Jollof Rice</a></li>
+        <a href="#Bread">Bread</a></li>
+        <a href="#indomie">Indomie</a></li>
+        <a href="#Amala">Amala</a></li>
+        <a href="#YamandEgg">Yam and Egg</a></li>
+    </nav>
+    <div class="home">
+        <a href="#">Home</a>> Welcome To My Recipe Website
+    </div>
+    <section id="Jollof Rice">
+        <h2>Description</h2>
+        <p>
+            Jollof rice is a popular West African dish made with rice, tomatoes, peppers, onions, and delicious spices.
+            It is commonly served with chicken, beef, fish, or vegetables.
+        </p>
+        <p>
+            <strong>Preparation Time:</strong> 20 minutes<br>
+            <strong>Cooking Time:</strong> 45 minutes<br>
+            <strong>Servings:</strong> 4 People<br>
+        </p>
+        <p class="back-to-top"><a href="#top">&#8593;</a></p>
+    </section>
+    <section id="Bread">
+        <h2>Description</h2>
+        <ul>
+            <li><strong>2 cups</strong> of long-grain rice</li>
+            <li><strong>4</strong> fresh tomatoes </li>
+            <li><strong>2</strong> red bell peppers</li>
+            <li><strong>1</strong> onion</li>
+            <li><strong>2 tablespoons</strong> tomato paster</li>
+            <li><strong>3 tablespoons</strong> vegetable oil</li>
+            <li><strong>2 cups</strong> chicken stock</li>
+            <li><strong>1 teaspoon</strong> curry powder</li>
+            <li><strong>salt</strong> to taste</li>
+            <li>
+                optimal ingredients:
+                <ul>
+                    <li>Chicken</li>
+                    <li>Carrot</li>
+                    <li>Green peas</li>
+                </ul>
+            </li>
+        </ul>
+        <p class="back-to-top"><a href="#top">&#8593;</a></p>
+    </section>
+    <section id="indomie">
+        <h2>Description</h2>
+        <ol>
+            <li>Wash the rice thorougly and set it aside</li>
+            <li>Blend the tomatoes, red bell peppers, and onion together.</li>
+            <ul>
+                <li>Blend until smooth,</li>
+                <li>Do not add to much water</li>
+            </ul>
+            </li>
+            <li>Heat the vegetable oil in alarge pot.</li>
+            <li>Add the tomato paste and fry for a few minutes.</li>
+            <p><em>Be careful not to burn the tomatopaste</em></p>
+            <li>Add the blended tomato paste miture and cook for about 10-15 minutes.</li>
+            <li>Add curry powder, thyme, and salt.</li>
+            <li>Add the chicken stock and bring the miture to a boil.</li>
+            <li>Ad the washed rice and strir properly.</li>
+            <li>Cover the pot and cook on low heat until the rice becomes soft.</li>
+            <ul>
+                <li>Check the rice occasionally.</li>
+                <li>Add a litle water if necessary.</li>
+            </ul>
+            </li>
+            <li>Serve hot with your preferred side dish.</li>
+        </ol>
+        <p class="back-to-top"><a href="#top">&#8593;</a></p>
+    </section>
+    <section id="Amala">
+        <h2>Description</h2>
+        <ul>
+            <li><strong>Tips:</strong> Cook the rice on low heat to prevent burning. </li>
+            <li><strong>Notes:</strong> You can add chicken, beef, or fish .</li>
+            <li><strong>tips:</strong> Allow the rice to rest for a few minutes before serving.</li>
+        </ul>
+        <p class="back-to-top"><a href="#top">&#8593;</a></p>
+    </section>
+    <section id="YamandEgg">
+        <h2>Description</h2>
+        <p>Approximately nutritional information per serving:</p>
+        <ul>
+            <li>Calories: 450 kcal</li>
+            <li>Carbonhydrates: 65 g</li>
+            <li>Protein: 10 g</li>
+            <li>Fat: 15 g</li>
+        </ul>
+        <p class="back-to-top"><a href="#top">&#8593;</a></p>
+    </section>
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>You can reach me at <a href="jollof.com">jollof.rice@example.com</a></p>
+        <p class="back-to-top"><a href="#top">&#8593;</a></p>
+    </section>
+  <footer>
+        <p>&copy; 2026 jollof rice</p>
+        <p>
+            <a href="#">LinkedIn</a> |
+            <a href="#">GitHub</a> |
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

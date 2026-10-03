@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th colspan="2">student</th>
+        </tr>
+        <tr>
+            <td>john</td>
+            <td>fatai</td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <th rowspan="2">student</th>
+            <td>fatai</td>
+        </tr>
+        <tr>
+            <td>shola</td>
+        </tr>
+
+    </table>
+    <table border="1">
+        <tr>
+            <th scope="row"> john</th>
+            <td>20</td>
+        </tr>
+    </table>
+    <form action="#">
+<input list="name" name="male">
+<datalist id="name">
+<option value="f">Fatai</option>
+<option value="B"> Basit</option>
+<option value="Sanni">
+</datalist>
+
+
+    </form>
+
+    <form action="#" method="post">
+        <input type="text" name="name">
+        <input type="hidden" name="student-id" value="12345">
+        <button type="submit">submit</button>
+        <input type="checkbox" id="html" name="skill" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skil" value="css">
+        <label for="css">CSS</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">other</label>
+        <label>
+            Username:
+            <input type="text" name="username">
+        </label>
+        <!-- Method 1: Using 'for' attribute -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+    </form>
+    <form>
+        <select name="size" multiple size="3">
+            <option value="S" selected>Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+        </select>
+    </form>
+    <form action="#" method="post">
+        <select name="name">
+            <optgroup label="male">
+                <option value="fatai">fatai</option>
+                <option value="isaac">obafemi</option>
+            </optgroup>
+            <optgroup label="Female">
+                <option value="mariam">Mariam</option>
+                <option value="kawu">katharal</option>
+            </optgroup>
+
+            <!-- Min/Max for Numbers -->
+            <input type="number" name="age" min="18" max="100">
+            <!-- Disabled Field -->
+            <input type="text" name="field" disabled>
+            <!-- Readonly Field -->
+            <input type="text" name="field" readonly value="Cannot edit">
+            <!-- Placeholder -->
+            <input type="text" name="name" placeholder="Enter your name">
+            <!-- Autofocus -->
+            <input type="text" name="search" autofocus>
+            <!-- Autocomplete -->
+            <input type="text" name="email" autocomplete="email">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="firstname">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lastname">
+            </fieldset>
+        </select>
+
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+        </datalist>
+
+    </form>
+</body>
+
+</html>
+<ul>
+    <li>fghsgsgms
+        <ul>
+            <li>gjhjhdj</li>
+            <li>gmd,hvdv,j</li>
+            <li>dghvnhgvgnhvj</li>
+        </ul>
+    </li>
+    <li>rjhgrhghr
+        <ul>
+            <li>jhrhgjhkgjhgj</li>
+            <li>rhgrjhjgjhjg</li>
+            <li>fjghjf</li>
+        </ul>
+    </li>
+    <li>grfdhfghjgf
+        <ul>
+            <li>hghtjjskhgjhjg</li>
+            <li>bgbbhrghrhgr</li>
+            <li>jghjrhgjthgj</li>
+        </ul>
+    </li>
+</ul>
+
+
+
+
+
+<ul>
+    <li>Frontend
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </li>
+    <li>Backend
+        <ul>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>PHP</li>
+        </ul>
+    </li>
+</ul>
+<a href="mailto: info@email.com" target="_parent">Email us</a>
+<a href="tel: +2348064367612" target="_self">call us</a>
+<a href="sms: +2348128500080" target="_blank">Text us</a>
+<a href="url" target="_top">link</a>
+<picture>
+    <source media="(max-width: 60px)" srcset="images/sunset.jpg">
+    <source media="(max-width: 100px)" srcset="images/tacos.jpg">
+    <img src="images/jollof.jpg" alt="Responsive image">
+</picture>
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    <source src="audio.ogg" type="audio/ogg">
+    <source src="audio.wav" type="audio/wav">
+</audio>
+<video width="640" height="360" controls>
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+    <source src="video.ogg" type="video/ogg">
+</video>
+
+<video controls poster="images/beach.jpg">
+    <source src="video.mp4" type="video/mp4">
+</video>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen>
+</iframe>
+<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" fill="red" 
